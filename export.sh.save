@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for i in $(cat dades.csv)
+do
+fehca=$(echo $i| cut -d';' -f1)
+casos=$(echo $i| cut -d';' -f3)
+muertos=$(echo $i| cut -d';' -f7)
+ia14=$(echo $i| cut -d';' -f5)
+ia7=$(echo $i| cut -d';' -f6)
+echo "INSERT INTO ia14 (fecha, id_ccaa, incidencia) VALUES ('$fecha', 1, $ia14)";
+$(echo $i| cut -d';' -f3)
+done
